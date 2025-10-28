@@ -12,6 +12,7 @@ const unknownEndpoint = require('./middlewares/unknownEndpoint')
 app.use(cors())
 app.use(express.json())
 app.use(requestLogger)
+app.use(express.static('dist'))
 
 app.use('/api/notes', notesRouter)
 
