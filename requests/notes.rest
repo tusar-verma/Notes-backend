@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/notes/7
+
+### 
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "title": "A beautiful title",
+    "content": "Note from vs rest"
+}
+
+###
+PUT http://localhost:3001/api/notes/12
+content-type: application/json
+
+{   
+    "title": "dsa",
+    "content": "dsa"
+}
+
+###
+GET http://localhost:3001/api/notes/
